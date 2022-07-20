@@ -1,0 +1,12 @@
+<H1>City: {{city.city}}<br/></H1>
+<br/>
+Zip: {{city.zip}}<br/>
+Location: {{city.loc.x}} , {{city.loc.y}}<br/>
+Population: {{city.pop}}<br/>
+State: {{city.state}}<br/>
+<br />
+<ul>
+    <li *ngFor="let city of cities">
+        <a routerLink="{{city._id}}">{{city.city}} - {{city.state}}</a>
+    </li>
+</ul>

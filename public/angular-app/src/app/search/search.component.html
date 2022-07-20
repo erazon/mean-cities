@@ -1,0 +1,14 @@
+<p>Search Page</p>
+<div>City Name</div>
+<form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+    <input formControlName="city" placeholder="City Name" />
+    <div>
+        <button type="submit">Find</button>
+    </div>
+</form>
+<br />
+<ul>
+    <li *ngFor="let city of cities">
+        <a routerLink="{{city._id}}">{{city.city}} - {{city.state}}</a>
+    </li>
+</ul>

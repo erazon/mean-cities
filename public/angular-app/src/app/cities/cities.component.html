@@ -1,0 +1,10 @@
+The list of Cities are:<br/>
+
+<ul>
+    <li *ngFor="let city of cities">
+        <a routerLink="{{city._id}}">{{city.city}} - {{city.state}}</a>
+    </li>
+</ul>
+<br />
+<button [attr.disabled]="previousDisabled? 'disabled': null" (click)="onPreviousClick()">Previous</button>
+<button [attr.disabled]="nextDisabled? 'disabled': null" (click)="onNextClick()">Next</button>

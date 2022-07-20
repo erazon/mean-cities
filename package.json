@@ -1,0 +1,24 @@
+{
+  "name": "mean-cities",
+  "version": "1.0.0",
+  "description": "Programming test cities project.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "startBackend": "node app.js",
+    "startFrontend": "cd public/angular-app && npm start",
+    "start": "npm run startBackend | npm run startFrontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MEAN",
+    "GEO-SEARCH"
+  ],
+  "author": "Najeeb Najeeb",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5"
+  }
+}
